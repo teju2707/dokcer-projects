@@ -1,0 +1,23 @@
+version: '3.7'
+
+services:
+  flask-app:
+    build:
+      context: .
+      dockerfile: Teju-Dockerfile
+    ports:
+      - "5000:5000"
+    depends_on:
+      - db
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+
+  db:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: flaskdb
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+    ports:
+      - "5432:5432"
