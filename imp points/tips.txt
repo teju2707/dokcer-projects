@@ -3,3 +3,10 @@ create image from dockerfile:   docker build -t <image-name> -f <custom-dockerfi
 Delete Docker Image :    docker rmi <IMAGE_ID>                                                   [ex . docker rmi 1bc8a21c62b8 ]
                                                                
                          sudo netstat -tuln | grep nginx
+Step 1: Stop the Existing Container : docker stop nifty_spence
+Step 2: Remove the Existing Container : docker rm nifty_spence
+Step 3: Re-run the New Container : docker run -d -p 8080:80 --name teju-stastic.web stastis-web
+
+
+
+
