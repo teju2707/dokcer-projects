@@ -5,7 +5,9 @@ Delete Docker Image :    docker rmi <IMAGE_ID>                                  
                          sudo netstat -tuln | grep nginx
 Step 1: Stop the Existing Container : docker stop nifty_spence
 Step 2: Remove the Existing Container : docker rm nifty_spence
-Step 3: Re-run the New Container : docker run -d -p 8080:80 --name teju-stastic.web stastis-web
+Step 3: Re-run the New Container : docker run -d --name <container-name> -p <host-port>:<container-port> <image-name>
+
+
 
 
 
