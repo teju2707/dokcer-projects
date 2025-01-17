@@ -1,1 +1,1 @@
-SECRET_KEY = 'your_jwt_secret_key_here'
+SECRET_KEY = 'your-secret-key-here'  # Replace with a strong secret key
