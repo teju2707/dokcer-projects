@@ -2,3 +2,4 @@ create image from dockerfile:   docker build -t <image-name> -f <custom-dockerfi
 
 Delete Docker Image :    docker rmi <IMAGE_ID>                                                   [ex . docker rmi 1bc8a21c62b8 ]
                                                                
+                         sudo netstat -tuln | grep nginx
