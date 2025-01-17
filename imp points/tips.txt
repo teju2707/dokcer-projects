@@ -1,2 +1,4 @@
-docker build -t <image-name> -f <custom-dockerfile-name> .         [ex. : docker build -t static-site -f teju-Dockerfile . ]
+create image from dockerfile:   docker build -t <image-name> -f <custom-dockerfile-name> .     [ex. : docker build -t static-site -f teju-Dockerfile . ]
 
+Delete Docker Image :    docker rmi <IMAGE_ID>                                                   [ex . docker rmi 1bc8a21c62b8 ]
+                                                               
