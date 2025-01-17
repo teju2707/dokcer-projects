@@ -1,0 +1,16 @@
+# Use the official Nginx image from the Docker registry
+FROM nginx:alpine
+
+# Set the working directory for the container
+WORKDIR /usr/share/nginx/html
+
+# Copy the static website files (index.html) into the Nginx directory
+COPY index.html .
+
+# Expose port 80 for Nginx (industry standard port)
+EXPOSE 80
+
+# Ensure the container runs in the background (Nginx starts by default)
+CMD ["nginx", "-g", "daemon off;"]
+
+
