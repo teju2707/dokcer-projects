@@ -1,1 +1,24 @@
+```yaml
+version: '3'
+services:
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    ports:
+      - "8086:80"
+    networks:
+      - custom-network
 
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    networks:
+      - custom-network
+
+networks:
+  custom-network:
+    driver: bridge
